@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_delete.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_delete.png"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\app_notes.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\app_notes.png"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_compose.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_compose.png"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\live_folder_notes.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\live_folder_notes.png"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_edit.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_edit.png"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_save.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_save.png"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_revert.png",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_revert.png"
+    }
+]

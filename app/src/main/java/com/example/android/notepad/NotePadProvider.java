@@ -401,7 +401,7 @@ public class NotePadProvider extends ContentProvider implements PipeDataWriter<C
     /**
      * Returns a stream of data for each supported stream type. This method does a query on the
      * incoming URI, then uses
-     * {@link android.content.ContentProvider#openPipeHelper(Uri, String, Bundle, Object,
+     * {@link ContentProvider#openPipeHelper(Uri, String, Bundle, Object,
      * PipeDataWriter)} to start another thread in which to convert the data into a stream.
      *
      * @param uri The URI pattern that points to the data stream
@@ -458,7 +458,7 @@ public class NotePadProvider extends ContentProvider implements PipeDataWriter<C
     }
 
     /**
-     * Implementation of {@link android.content.ContentProvider.PipeDataWriter}
+     * Implementation of {@link PipeDataWriter}
      * to perform the actual work of converting the data in one of cursors to a
      * stream of data for the client to read.
      */

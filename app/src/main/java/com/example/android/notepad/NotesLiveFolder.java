@@ -71,7 +71,7 @@ public class NotesLiveFolder extends Activity {
 
             // Adds the display icon of the live folder as an Extra resource.
             ShortcutIconResource foldericon =
-                Intent.ShortcutIconResource.fromContext(this, R.drawable.live_folder_notes);
+                ShortcutIconResource.fromContext(this, R.drawable.live_folder_notes);
             liveFolderIntent.putExtra(LiveFolders.EXTRA_LIVE_FOLDER_ICON, foldericon);
 
             // Add the display mode of the live folder as an integer. The specified

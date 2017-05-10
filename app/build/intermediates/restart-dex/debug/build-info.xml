@@ -2,41 +2,32 @@
 <instant-run
     abi="x86"
     api-level="23"
-    density="420dpi"
+    density="xxhdpi"
     format="7"
-    timestamp="234614176622473"
-    token="-2194743760440918377" >
+    timestamp="526224912624693"
+    token="6950567760840467860" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="519" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="490" />
     <task
         name="verifier"
-        duration="0" />
+        duration="68" />
 
-    <build timestamp="233768531016582" >
+    <artifact
+        location="C:\Users\14334\Desktop\Notepad-master\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="526224912624693" >
         <artifact
-            location="E:\project\Notepad-master\Notepad-master\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\14334\Desktop\Notepad-master\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="234330461098365"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="E:\project\Notepad-master\Notepad-master\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="234343208057115" >
-        <artifact
-            location="E:\project\Notepad-master\Notepad-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="234614176622473" />
 
 </instant-run>

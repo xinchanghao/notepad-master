@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="YELLO">#FFFFCC</color>
+    <color name="Pink">#FFC0CB</color>
+    <color name="PaleVioletRed">#DB7093</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="MediumPurple">#9370DB</color>
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="Snow">	#FFFAFA</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="PapayaWhip">#FFEFD5</color>
+</resources>

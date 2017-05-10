@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCC"
+    android:id="@+id/noteList_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:id="@+id/et_Search"
+            android:hint="输入标题查找"
+            android:textCursorDrawable="@drawable/contact_edit_edittext_normal"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_searchnotes"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#FFFFCC"
+        android:dividerHeight="0dp"
+        android:id="@id/android:list"
+
+        >
+
+    </ListView>
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:background="@drawable/tianjia"/>
+
+
+</FrameLayout>
+
+
+        <!--fab:fab_colorNormal="@color/primary"-->
+        <!--fab:fab_colorPressed="@color/primary_pressed"-->
+        <!--fab:fab_colorRipple="@color/ripple" />-->
+    <!--<ImageView-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/tianjia"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:id="@+id/iv_addnotes"-->
+        <!--/>-->
+</LinearLayout>

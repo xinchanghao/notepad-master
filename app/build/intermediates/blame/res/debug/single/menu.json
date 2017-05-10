@@ -1,9 +1,5 @@
 [
     {
-        "merged": "E:\\project\\Notepad-master\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_options_menu.xml",
-        "source": "E:\\project\\Notepad-master\\Notepad-master\\app\\src\\main\\res\\menu\\list_options_menu.xml"
-    },
-    {
         "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\editor_options_menu.xml",
         "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\menu\\editor_options_menu.xml"
     },
@@ -14,13 +10,5 @@
     {
         "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_options_menu.xml",
         "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\menu\\list_options_menu.xml"
-    },
-    {
-        "merged": "E:\\project\\Notepad-master\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\editor_options_menu.xml",
-        "source": "E:\\project\\Notepad-master\\Notepad-master\\app\\src\\main\\res\\menu\\editor_options_menu.xml"
-    },
-    {
-        "merged": "E:\\project\\Notepad-master\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_context_menu.xml",
-        "source": "E:\\project\\Notepad-master\\Notepad-master\\app\\src\\main\\res\\menu\\list_context_menu.xml"
     }
 ]

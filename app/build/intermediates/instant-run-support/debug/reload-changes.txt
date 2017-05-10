@@ -1,0 +1,2 @@
+CHANGED,E:\project\Notepad-master\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\NotesList$override.class
+CHANGED,E:\project\Notepad-master\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

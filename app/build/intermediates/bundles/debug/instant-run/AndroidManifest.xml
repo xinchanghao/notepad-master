@@ -29,6 +29,7 @@
         android:targetSdkVersion="11" />
 
     <application
+        name="com.example.android.notepad.application.MyApplication"
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:icon="@drawable/app_notes"
         android:label="@string/app_name" >
@@ -41,7 +42,9 @@
 
         <activity
             android:name="com.example.android.notepad.NotesList"
-            android:label="@string/title_notes_list" >
+            android:label="@string/title_notes_list"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -146,6 +149,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
     </application>
 
 </manifest>

@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\live_folder_notes.png",
-        "source": "C:\\Users\\14334\\AndroidStudioProjects\\NotePad-master\\app\\src\\main\\res\\drawable-ldpi\\live_folder_notes.png"
+        "merged": "E:\\project\\Notepad-master\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\app_notes.png",
+        "source": "E:\\project\\Notepad-master\\Notepad-master\\app\\src\\main\\res\\drawable-ldpi\\app_notes.png"
     },
     {
-        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\live_folder_notes.png",
-        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-ldpi\\live_folder_notes.png"
+        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\live_folder_notes.png",
+        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-ldpi\\live_folder_notes.png"
     },
     {
-        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\app_notes.png",
-        "source": "C:\\Users\\14334\\AndroidStudioProjects\\NotePad-master\\app\\src\\main\\res\\drawable-ldpi\\app_notes.png"
+        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\app_notes.png",
+        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-ldpi\\app_notes.png"
     },
     {
-        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\app_notes.png",
-        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\drawable-ldpi\\app_notes.png"
+        "merged": "E:\\project\\Notepad-master\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\live_folder_notes.png",
+        "source": "E:\\project\\Notepad-master\\Notepad-master\\app\\src\\main\\res\\drawable-ldpi\\live_folder_notes.png"
     }
 ]

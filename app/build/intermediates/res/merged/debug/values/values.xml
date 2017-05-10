@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="MediumPurple">#9370DB</color>
+    <color name="PaleVioletRed">#DB7093</color>
+    <color name="PapayaWhip">#FFEFD5</color>
+    <color name="Pink">#FFC0CB</color>
+    <color name="Snow">	#FFFAFA</color>
+    <color name="YELLO">#FFFFCC</color>
+    <color name="material_blue_500">#5677fc</color>
+    <declare-styleable name="FloatingActionButton"><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorRipple"/><attr format="color" name="fab_colorDisabled"/><attr format="boolean" name="fab_shadow"/><attr format="enum" name="fab_type"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr></declare-styleable>
+    <dimen name="fab_elevation_lollipop">8dp</dimen>
+    <dimen name="fab_scroll_threshold">4dp</dimen>
+    <dimen name="fab_shadow_size">12dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
     <string name="app_name">NotePad</string>
+    <string name="background">Background</string>
     <string name="button_ok">OK</string>
+    <string name="define_FloatingActionButton"/>
     <string name="error_message">Error loading note</string>
     <string name="error_title">Error</string>
+    <string name="library_FloatingActionButton_author">Oleksandr Melnykov</string>
+    <string name="library_FloatingActionButton_authorWebsite">https://github.com/makovkastar/FloatingActionButton</string>
+    <string name="library_FloatingActionButton_isOpenSource">true</string>
+    <string name="library_FloatingActionButton_libraryDescription">Android Google+ like floating action button which reacts on the list view scrolling events. Becomes visible when the list view is scrolled up and invisible when scrolled down.</string>
+    <string name="library_FloatingActionButton_libraryName">FloatingActionButton</string>
+    <string name="library_FloatingActionButton_libraryVersion">1.0.0</string>
+    <string name="library_FloatingActionButton_libraryWebsite">https://github.com/makovkastar/FloatingActionButton</string>
+    <string name="library_FloatingActionButton_licenseId">mit</string>
+    <string name="library_FloatingActionButton_repositoryLink">https://github.com/makovkastar/FloatingActionButton</string>
     <string name="live_folder_name">Notes</string>
     <string name="menu_add">New note</string>
     <string name="menu_copy">Copy</string>

@@ -48,8 +48,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 
 /**
- * Provides access to a database of notes. Each note has a title, the note
- * itself, a creation date and a modified data.
+ *提供对notes数据库的访问。每个note都有一个标题，note
+ *它本身，一个创建日期和一个修改过的数据。
  */
 public class NotePadProvider extends ContentProvider implements PipeDataWriter<Cursor> {
     // Used for debugging and logging
@@ -82,9 +82,12 @@ public class NotePadProvider extends ContentProvider implements PipeDataWriter<C
             NotePad.Notes._ID,               // Projection position 0, the note's id
             NotePad.Notes.COLUMN_NAME_NOTE,  // Projection position 1, the note's content
             NotePad.Notes.COLUMN_NAME_TITLE, // Projection position 2, the note's title
+            NotePad.Notes.COLUMN_NAME_CREATE_DATE, // Projection position 3, the note's createdate
     };
+
     private static final int READ_NOTE_NOTE_INDEX = 1;
     private static final int READ_NOTE_TITLE_INDEX = 2;
+    private static final int READ_NOTE_CREATE_DATE_INDEX = 3;
 
     /*
      * Constants used by the Uri matcher to choose an action based on the pattern
@@ -468,9 +471,12 @@ public class NotePadProvider extends ContentProvider implements PipeDataWriter<C
         PrintWriter pw = null;
         try {
             pw = new PrintWriter(new OutputStreamWriter(fout, "UTF-8"));
+
             pw.println(c.getString(READ_NOTE_TITLE_INDEX));
             pw.println("");
             pw.println(c.getString(READ_NOTE_NOTE_INDEX));
+            pw.println("");
+            pw.println(c.getString(READ_NOTE_CREATE_DATE_INDEX));
         } catch (UnsupportedEncodingException e) {
             Log.w(TAG, "Ooops", e);
         } finally {

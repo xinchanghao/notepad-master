@@ -12,7 +12,9 @@ android {
         testApplicationId "com.example.android.notepad.tests"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
-
+    dependencies {
+        compile 'com.melnykov:floatingactionbutton:1.3.0'
+    }
     buildTypes {
         release {
             minifyEnabled false

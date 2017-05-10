@@ -15,9 +15,9 @@
  */
 
 package com.example.android.notepad;
-
 import com.example.android.notepad.NotePad;
-
+import com.example.android.notepad.application.MyApplication;
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.ClipboardManager;
 import android.content.ClipData;
@@ -26,18 +26,25 @@ import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 
 /**
  * Displays a list of notes. Will display notes from the {@link Uri}
@@ -49,8 +56,15 @@ import android.widget.SimpleCursorAdapter;
  * application should use the {@link android.content.AsyncQueryHandler} or
  * {@link android.os.AsyncTask} object to perform operations asynchronously on a separate thread.
  */
-public class NotesList extends ListActivity {
+public class NotesList extends ListActivity implements View.OnClickListener {
 
+
+    private EditText et_Search;//搜索框控件实例
+    private ImageView iv_searchnotes;//搜索按钮实例
+    private ListView lv_notesList;
+    private NotesListAdapter adapter;
+    private ImageView iv_addnotes;//添加按钮
+    private LinearLayout ll_noteList;
     // For logging and debugging
     private static final String TAG = "NotesList";
 
@@ -60,7 +74,10 @@ public class NotesList extends ListActivity {
     private static final String[] PROJECTION = new String[] {
             NotePad.Notes._ID, // 0
             NotePad.Notes.COLUMN_NAME_TITLE, // 1
+            NotePad.Notes.COLUMN_NAME_CREATE_DATE,//2
+            NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE//3
     };
+
 
     /** The index of the title column */
     private static final int COLUMN_INDEX_TITLE = 1;
@@ -71,17 +88,16 @@ public class NotesList extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.noteslist_layout);
+        initView();
         // The user does not need to hold down the key to use menu shortcuts.
         setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);
-
         /* If no data is given in the Intent that started this Activity, then this Activity
          * was started when the intent filter matched a MAIN action. We should use the default
          * provider URI.
          */
         // Gets the intent that started this Activity.
         Intent intent = getIntent();
-
         // If there is no data associated with the Intent, sets the data to the default URI, which
         // accesses a list of notes.
         if (intent.getData() == null) {
@@ -108,34 +124,76 @@ public class NotesList extends ListActivity {
             NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
         );
 
-        /*
-         * The following two arrays create a "map" between columns in the cursor and view IDs
-         * for items in the ListView. Each element in the dataColumns array represents
-         * a column name; each element in the viewID array represents the ID of a View.
-         * The SimpleCursorAdapter maps them in ascending order to determine where each column
-         * value will appear in the ListView.
-         */
+        adapter=new NotesListAdapter(getApplicationContext(),cursor,getIntent().getData(),getIntent().getAction());
+        lv_notesList.setAdapter(adapter);
 
-        // The names of the cursor columns to display in the view, initialized to the title column
-        String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE } ;
-
-        // The view IDs that will display the cursor columns, initialized to the TextView in
-        // noteslist_item.xml
-        int[] viewIDs = { android.R.id.text1 };
-
-        // Creates the backing adapter for the ListView.
-        SimpleCursorAdapter adapter
-            = new SimpleCursorAdapter(
-                      this,                             // The Context for the ListView
-                      R.layout.noteslist_item,          // Points to the XML for a list item
-                      cursor,                           // The cursor to get items from
-                      dataColumns,
-                      viewIDs
-              );
-
-        // Sets the ListView's adapter to be the cursor adapter that was just created.
-        setListAdapter(adapter);
     }
+
+    /*
+    绑定id
+     */
+    private void initView() {
+        ll_noteList= (LinearLayout) findViewById(R.id.noteList_layout);
+        iv_addnotes= (ImageView) findViewById(R.id.fab);
+        lv_notesList= (ListView) findViewById(android.R.id.list);//绑定listView;
+        et_Search= (EditText) findViewById(R.id.et_Search);
+        iv_searchnotes= (ImageView) findViewById(R.id.iv_searchnotes);
+
+        iv_addnotes.setOnClickListener(this);
+        iv_searchnotes.setOnClickListener(this);
+        ll_noteList.setBackgroundColor(Color.parseColor(MyApplication.getBackground()));
+        lv_notesList.setBackgroundColor(Color.parseColor(MyApplication.getBackground()));
+
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.fab:
+                startActivity(new Intent(Intent.ACTION_INSERT, getIntent().getData()));
+                break;
+            case R.id.iv_searchnotes:
+                showOrhide();
+                if(et_Search.getText().toString().equals("")){
+                    Cursor cursor1 = managedQuery(
+                            getIntent().getData(),            // Use the default content URI for the provider.
+                            PROJECTION,                       // Return the note ID and title for each note.
+                            null,                             // No where clause, return all records.
+                            null,                             // No where clause, therefore no where column values.
+                            NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
+                    );
+                    adapter.readDate(cursor1);
+                    adapter.notifyDataSetChanged();
+                }else{
+                    adapter.Search(et_Search.getText().toString());
+                }
+
+                break;
+        }
+    }
+
+    /*
+    软硬盘的显示和隐藏
+     */
+    private void showOrhide(){
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Cursor cursor1 = managedQuery(
+               getIntent().getData(),            // Use the default content URI for the provider.
+                PROJECTION,                       // Return the note ID and title for each note.
+                null,                             // No where clause, return all records.
+                null,                             // No where clause, therefore no where column values.
+                NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
+        );
+        adapter.readDate(cursor1);
+        adapter.notifyDataSetChanged();
+    }
+
 
     /**
      * Called when the user clicks the device's Menu button the first time for
@@ -188,7 +246,7 @@ public class NotesList extends ListActivity {
         }
 
         // Gets the number of notes currently being displayed.
-        final boolean haveItems = getListAdapter().getCount() > 0;
+        final boolean haveItems = adapter.getCount() > 0;
 
         // If there are any notes in the list (which implies that one of
         // them is selected), then we need to generate the actions that
@@ -263,14 +321,6 @@ public class NotesList extends ListActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-        case R.id.menu_add:
-          /*
-           * Launches a new Activity using an Intent. The intent filter for the Activity
-           * has to have action ACTION_INSERT. No category is set, so DEFAULT is assumed.
-           * In effect, this starts the NoteEditor Activity in NotePad.
-           */
-           startActivity(new Intent(Intent.ACTION_INSERT, getIntent().getData()));
-           return true;
         case R.id.menu_paste:
           /*
            * Launches a new Activity using an Intent. The intent filter for the Activity
@@ -279,6 +329,9 @@ public class NotesList extends ListActivity {
            */
           startActivity(new Intent(Intent.ACTION_PASTE, getIntent().getData()));
           return true;
+            case R.id.bg_change:
+                showpopSelectBgWindows();
+                return true;
         default:
             return super.onOptionsItemSelected(item);
         }
@@ -319,15 +372,24 @@ public class NotesList extends ListActivity {
          * the adapter associated all of the data for a note with its list item. As a result,
          * getItem() returns that data as a Cursor.
          */
-        Cursor cursor = (Cursor) getListAdapter().getItem(info.position);
+
+        Cursor cursor = managedQuery(
+                Uri.parse(getIntent().getData()+"/"+adapter.getmDate().get(info.position).getCursor_id()),            // Use the default content URI for the provider.
+                PROJECTION,                       // Return the note ID and title for each note.
+                null,                             // No where clause, return all records.
+                null,                             // No where clause, therefore no where column values.
+                NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
+        );
+        // Cursor cursor = (Cursor) adapter.getItem(info.position);
 
         // If the cursor is empty, then for some reason the adapter can't get the data from the
         // provider, so returns null to the caller.
         if (cursor == null) {
             // For some reason the requested item isn't available, do nothing
             return;
+        }else{
+            cursor.moveToNext();
         }
-
         // Inflate menu from XML resource
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.list_context_menu, menu);
@@ -340,11 +402,13 @@ public class NotesList extends ListActivity {
         // as well.  This does a query on the system for any activities that
         // implement the ALTERNATIVE_ACTION for our data, adding a menu item
         // for each one that is found.
-        Intent intent = new Intent(null, Uri.withAppendedPath(getIntent().getData(), 
-                                        Integer.toString((int) info.id) ));
+        Intent intent = new Intent(null, Uri.withAppendedPath(getIntent().getData(),
+                                        adapter.getmDate().get(info.position).getCursor_id()) );
         intent.addCategory(Intent.CATEGORY_ALTERNATIVE);
         menu.addIntentOptions(Menu.CATEGORY_ALTERNATIVE, 0, 0,
                 new ComponentName(this, NotesList.class), null, intent, 0, null);
+
+
     }
 
     /**
@@ -386,82 +450,121 @@ public class NotesList extends ListActivity {
             return false;
         }
         // Appends the selected note's ID to the URI sent with the incoming Intent.
-        Uri noteUri = ContentUris.withAppendedId(getIntent().getData(), info.id);
-
+        Uri noteUri = ContentUris.withAppendedId(getIntent().getData(), Integer.parseInt(adapter.getmDate().get(info.position).getCursor_id()));
         /*
          * Gets the menu item's ID and compares it to known actions.
          */
         switch (item.getItemId()) {
-        case R.id.context_open:
-            // Launch activity to view/edit the currently selected item
-            startActivity(new Intent(Intent.ACTION_EDIT, noteUri));
-            return true;
-//BEGIN_INCLUDE(copy)
-        case R.id.context_copy:
-            // Gets a handle to the clipboard service.
-            ClipboardManager clipboard = (ClipboardManager)
-                    getSystemService(Context.CLIPBOARD_SERVICE);
-  
-            // Copies the notes URI to the clipboard. In effect, this copies the note itself
-            clipboard.setPrimaryClip(ClipData.newUri(   // new clipboard item holding a URI
-                    getContentResolver(),               // resolver to retrieve URI info
-                    "Note",                             // label for the clip
-                    noteUri)                            // the URI
-            );
-  
-            // Returns to the caller and skips further processing.
-            return true;
-//END_INCLUDE(copy)
-        case R.id.context_delete:
-  
-            // Deletes the note from the provider by passing in a URI in note ID format.
-            // Please see the introductory note about performing provider operations on the
-            // UI thread.
-            getContentResolver().delete(
-                noteUri,  // The URI of the provider
-                null,     // No where clause is needed, since only a single note ID is being
-                          // passed in.
-                null      // No where clause is used, so no where arguments are needed.
-            );
-  
-            // Returns to the caller and skips further processing.
-            return true;
-        default:
-            return super.onContextItemSelected(item);
+            case R.id.context_open:
+                // Launch activity to view/edit the currently selected item
+                startActivity(new Intent(Intent.ACTION_EDIT, noteUri));
+                return true;
+            //BEGIN_INCLUDE(copy)
+            case R.id.context_copy:
+                // Gets a handle to the clipboard service.
+                ClipboardManager clipboard = (ClipboardManager)
+                        getSystemService(Context.CLIPBOARD_SERVICE);
+
+                // Copies the notes URI to the clipboard. In effect, this copies the note itself
+                clipboard.setPrimaryClip(ClipData.newUri(   // new clipboard item holding a URI
+                        getContentResolver(),               // resolver to retrieve URI info
+                        "Note",                             // label for the clip
+                        noteUri)                            // the URI
+                );
+
+                // Returns to the caller and skips further processing.
+                return true;
+             //END_INCLUDE(copy)
+            default:
+                return super.onContextItemSelected(item);
         }
     }
+    /*
+       背景颜色选择框
+        */
+    private  void showpopSelectBgWindows(){
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View view = inflater.inflate(R.layout.dialog_bg_select_layout, null);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("背景");//设置标题
+        builder.setView(view);
+        AlertDialog dialog = builder.create();//获取dialog
+        dialog.show();//显示对话框
+    }
 
-    /**
-     * This method is called when the user clicks a note in the displayed list.
-     *
-     * This method handles incoming actions of either PICK (get data from the provider) or
-     * GET_CONTENT (get or create data). If the incoming action is EDIT, this method sends a
-     * new Intent to start NoteEditor.
-     * @param l The ListView that contains the clicked item
-     * @param v The View of the individual item
-     * @param position The position of v in the displayed list
-     * @param id The row ID of the clicked item
+    /*
+    背景改变的监听
      */
-    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-
-        // Constructs a new URI from the incoming URI and the row ID
-        Uri uri = ContentUris.withAppendedId(getIntent().getData(), id);
-
-        // Gets the action from the incoming Intent
-        String action = getIntent().getAction();
-
-        // Handles requests for note data
-        if (Intent.ACTION_PICK.equals(action) || Intent.ACTION_GET_CONTENT.equals(action)) {
-
-            // Sets the result to return to the component that called this Activity. The
-            // result contains the new URI
-            setResult(RESULT_OK, new Intent().setData(uri));
-        } else {
-
-            // Sends out an Intent to start an Activity that can handle ACTION_EDIT. The
-            // Intent's data is the note ID URI. The effect is to call NoteEdit.
-            startActivity(new Intent(Intent.ACTION_EDIT, uri));
+    public void ColorSelect(View view){
+        String color;
+        switch(view.getId()){
+            case R.id.pink:
+                color="#FFC0CB";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
+            case R.id.Yello:
+                color="#FFFFCC";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
+            case R.id.PaleVioletRed:
+                color="#DB7093";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
+            case R.id.LightGrey:
+                color="#D3D3D3";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
+            case R.id.MediumPurple:
+                color="#9370DB";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
+            case R.id.DarkGray:
+                color="#A9A9A9";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
+            case R.id.Snow:
+                color="#FFFAFA";
+                ll_noteList.setBackgroundColor(Color.parseColor(color));
+                lv_notesList.setBackgroundColor(Color.parseColor(color));
+                adapter.setBackground(color);
+                adapter.notifyDataSetChanged();
+                MyApplication.setBackground(color);
+                MyApplication.saveBackground();
+                break;
         }
+
     }
+
+
+
 }

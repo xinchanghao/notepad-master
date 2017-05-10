@@ -152,13 +152,14 @@ public class NoteEditor extends Activity {
         // Gets the action that triggered the intent filter for this Activity
         final String action = intent.getAction();
 
+
         // For an edit action:
         if (Intent.ACTION_EDIT.equals(action)) {
 
             // Sets the Activity state to EDIT, and gets the URI for the data to be edited.
             mState = STATE_EDIT;
             mUri = intent.getData();
-
+            Log.d("zzz","uri="+mUri);
             // For an insert or paste action:
         } else if (Intent.ACTION_INSERT.equals(action)
                 || Intent.ACTION_PASTE.equals(action)) {
@@ -175,9 +176,9 @@ public class NoteEditor extends Activity {
              */
             if (mUri == null) {
 
+
                 // Writes the log identifier, a message, and the URI that failed.
                 Log.e(TAG, "Failed to insert new note into " + getIntent().getData());
-
                 // Closes the activity.
                 finish();
                 return;
@@ -264,6 +265,7 @@ public class NoteEditor extends Activity {
              */
             mCursor.moveToFirst();
 
+
             // Modifies the window title for the Activity according to the current Activity state.
             if (mState == STATE_EDIT) {
                 // Set the title of the Activity to include the note title
@@ -304,6 +306,8 @@ public class NoteEditor extends Activity {
             mText.setText(getText(R.string.error_message));
         }
     }
+
+
 
     /**
      * This method is called when an Activity loses focus during its normal operation, and is then

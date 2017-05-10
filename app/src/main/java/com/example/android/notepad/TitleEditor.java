@@ -21,6 +21,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -81,7 +82,7 @@ public class TitleEditor extends Activity {
          * the block will be momentary, but in a real app you should use
          * android.content.AsyncQueryHandler or android.os.AsyncTask.
          */
-
+        Log.d("hhh",mUri+"");
         mCursor = managedQuery(
             mUri,        // The URI for the note that is to be retrieved.
             PROJECTION,  // The columns to retrieve

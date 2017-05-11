@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "outputFile": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 94
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 137
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 181
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 230
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 277
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 370
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 409
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 449
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 489
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\color.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 541
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 994
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1045
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1092
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1137
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1184
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1229
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1279
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 1320
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 1369
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 1430
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 1476
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 1559
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 1682
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 1757
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 2009
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -505,7 +505,7 @@
                     "endOffset": 2099
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -524,7 +524,7 @@
                     "endOffset": 2177
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 2301
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 2372
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 2496
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\values\\values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 2547
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 2593
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 2636
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -657,7 +657,7 @@
                     "endOffset": 2683
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -676,7 +676,7 @@
                     "endOffset": 2726
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -695,7 +695,7 @@
                     "endOffset": 2771
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 2826
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 2869
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 2938
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -771,7 +771,7 @@
                     "endOffset": 2989
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -790,7 +790,7 @@
                     "endOffset": 3042
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -809,7 +809,7 @@
                     "endOffset": 3088
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -828,7 +828,7 @@
                     "endOffset": 3138
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -847,7 +847,7 @@
                     "endOffset": 3188
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -866,7 +866,7 @@
                     "endOffset": 3245
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -885,7 +885,7 @@
                     "endOffset": 3296
                 },
                 "from": {
-                    "file": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,

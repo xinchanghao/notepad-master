@@ -1,38 +1,38 @@
 [
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_edit.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_edit.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fab_shadow_mini.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\drawable-hdpi-v4\\fab_shadow_mini.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_revert.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_revert.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_delete.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_delete.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_save.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_save.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_save.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_save.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\app_notes.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\app_notes.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\app_notes.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\app_notes.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_compose.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_compose.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_edit.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_edit.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_delete.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_delete.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_revert.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_revert.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fab_shadow_mini.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\drawable-hdpi-v4\\fab_shadow_mini.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\live_folder_notes.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\live_folder_notes.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\live_folder_notes.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\live_folder_notes.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_menu_compose.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable-hdpi\\ic_menu_compose.png"
     },
     {
-        "merged": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fab_shadow.png",
-        "source": "C:\\Users\\14334\\Desktop\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\drawable-hdpi-v4\\fab_shadow.png"
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\fab_shadow.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\exploded-aar\\com.melnykov\\floatingactionbutton\\1.3.0\\res\\drawable-hdpi-v4\\fab_shadow.png"
     }
 ]

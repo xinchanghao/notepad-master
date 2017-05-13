@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_notes.png",
-        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\app_notes.png"
-    },
-    {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lightgrey.png",
         "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\lightgrey.png"
+    },
+    {
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\app_notes.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\app_notes.png"
     },
     {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\palevioletred.png",
@@ -60,16 +60,16 @@
         "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\search.png"
     },
     {
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pink.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\pink.png"
+    },
+    {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\editview_bg.xml",
         "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\editview_bg.xml"
     },
     {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_compose.png",
         "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\ic_menu_compose.png"
-    },
-    {
-        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pink.png",
-        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\pink.png"
     },
     {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact_edit_edittext_normal.xml",

@@ -4,30 +4,48 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="105652457650190"
+    timestamp="108710791089724"
     token="5019090217228473653" >
 
     <task
         name="javac"
-        duration="586" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="152" />
+        duration="0" />
     <task
         name="verifier"
-        duration="15" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+        type="DEX" />
 
     <build timestamp="105652457650190" >
         <artifact
             location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="106445396031105"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\builds\debug\106445396031105\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="108710791089724" >
+        <artifact
+            location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

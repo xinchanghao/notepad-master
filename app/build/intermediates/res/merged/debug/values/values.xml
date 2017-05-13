@@ -18,7 +18,7 @@
     <dimen name="fab_size_mini">40dp</dimen>
     <dimen name="fab_size_normal">56dp</dimen>
     <string name="app_name">NotePad</string>
-    <string name="background">Background</string>
+    <string name="background">Theme</string>
     <string name="button_ok">OK</string>
     <string name="define_FloatingActionButton"/>
     <string name="error_message">Error loading note</string>

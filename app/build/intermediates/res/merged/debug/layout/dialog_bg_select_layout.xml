@@ -17,7 +17,7 @@
         android:layout_height="60dp"
         android:layout_weight="0.1"
         android:id="@+id/Yello"
-        android:background="@color/YELLO"
+        android:background="@drawable/yellow"
         android:onClick="ColorSelect"
         />
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_height="60dp"
         android:id="@+id/PaleVioletRed"
         android:layout_weight="0.1"
-        android:background="@color/PaleVioletRed"
+        android:background="@drawable/palevioletred"
         android:onClick="ColorSelect"
         />
     <ImageView
@@ -33,7 +33,7 @@
         android:layout_height="60dp"
         android:layout_weight="0.1"
         android:id="@+id/LightGrey"
-        android:background="@color/LightGrey"
+        android:background="@drawable/lightgrey"
         android:onClick="ColorSelect"
         />
     <ImageView
@@ -41,7 +41,7 @@
         android:layout_height="60dp"
         android:layout_weight="0.1"
         android:id="@+id/MediumPurple"
-        android:background="@color/MediumPurple"
+        android:background="@drawable/mediumpurple"
         android:onClick="ColorSelect"
         />
     <ImageView
@@ -49,7 +49,7 @@
         android:layout_height="60dp"
         android:layout_weight="0.1"
         android:id="@+id/DarkGray"
-        android:background="@color/DarkGray"
+        android:background="@drawable/darkgray"
         android:onClick="ColorSelect"
         />
     <ImageView
@@ -57,7 +57,7 @@
         android:layout_height="60dp"
         android:layout_weight="0.1"
         android:id="@+id/Snow"
-        android:background="@color/Snow"
+        android:background="@drawable/snow"
         android:onClick="ColorSelect"
         />
 

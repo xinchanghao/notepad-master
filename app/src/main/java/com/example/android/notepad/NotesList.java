@@ -25,8 +25,10 @@ import android.content.ComponentName;
 import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -499,67 +501,48 @@ public class NotesList extends ListActivity implements View.OnClickListener {
         String color;
         switch(view.getId()){
             case R.id.pink:
-                color="#FFC0CB";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                /*此处进行背景颜色修改,后改为主题效果*/
+//                color="#FFC0CB";
+//                ll_noteList.setBackgroundColor(Color.parseColor(color));
+//                lv_notesList.setBackgroundColor(Color.parseColor(color));
+//                adapter.setBackground(color);
+//                adapter.notifyDataSetChanged();
+//                MyApplication.setBackground(color);
+//                MyApplication.saveBackground();
+                Drawable btnDrawable1 = getResources().getDrawable(R.drawable.pink);
+                ll_noteList.setBackgroundDrawable(btnDrawable1);
+                lv_notesList.setBackgroundDrawable(btnDrawable1);
+
                 break;
             case R.id.Yello:
-                color="#FFFFCC";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                Drawable btnDrawable2 = getResources().getDrawable(R.drawable.yellow);
+                ll_noteList.setBackgroundDrawable(btnDrawable2);
+                lv_notesList.setBackgroundDrawable(btnDrawable2);
                 break;
             case R.id.PaleVioletRed:
-                color="#DB7093";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                Drawable btnDrawable3 = getResources().getDrawable(R.drawable.palevioletred);
+                ll_noteList.setBackgroundDrawable(btnDrawable3);
+                lv_notesList.setBackgroundDrawable(btnDrawable3);
                 break;
             case R.id.LightGrey:
-                color="#D3D3D3";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                Drawable btnDrawable4 = getResources().getDrawable(R.drawable.lightgrey);
+                ll_noteList.setBackgroundDrawable(btnDrawable4);
+                lv_notesList.setBackgroundDrawable(btnDrawable4);
                 break;
             case R.id.MediumPurple:
-                color="#9370DB";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                Drawable btnDrawable5 = getResources().getDrawable(R.drawable.mediumpurple);
+                ll_noteList.setBackgroundDrawable(btnDrawable5);
+                lv_notesList.setBackgroundDrawable(btnDrawable5);
                 break;
             case R.id.DarkGray:
-                color="#A9A9A9";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                Drawable btnDrawable6 = getResources().getDrawable(R.drawable.darkgray);
+                ll_noteList.setBackgroundDrawable(btnDrawable6);
+                lv_notesList.setBackgroundDrawable(btnDrawable6);
                 break;
             case R.id.Snow:
-                color="#FFFAFA";
-                ll_noteList.setBackgroundColor(Color.parseColor(color));
-                lv_notesList.setBackgroundColor(Color.parseColor(color));
-                adapter.setBackground(color);
-                adapter.notifyDataSetChanged();
-                MyApplication.setBackground(color);
-                MyApplication.saveBackground();
+                Drawable btnDrawable7 = getResources().getDrawable(R.drawable.snow);
+                ll_noteList.setBackgroundDrawable(btnDrawable7);
+                lv_notesList.setBackgroundDrawable(btnDrawable7);
                 break;
         }
 

@@ -51,13 +51,14 @@
         >
 
     </ListView>
-        <com.melnykov.fab.FloatingActionButton
+        <ImageButton
             android:id="@+id/fab"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="16dp"
-            android:background="@drawable/tianjia"/>
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="45dp"
+            android:background="@drawable/tianjia"
+            android:backgroundTintMode="add"/>
 
 
 </FrameLayout>

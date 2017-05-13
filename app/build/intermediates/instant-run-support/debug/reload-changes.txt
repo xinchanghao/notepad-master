@@ -1,0 +1,10 @@
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\R$layout$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\R$id$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\R$drawable$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\NotesLiveFolder$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\NotesList$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\R$menu$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\R$string$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\melnykov\fab\R$drawable$override.class
+CHANGED,C:\Users\14334\AndroidStudioProjects\Notepad-master\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\android\notepad\R$styleable$override.class

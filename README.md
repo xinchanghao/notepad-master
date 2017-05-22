@@ -169,5 +169,4 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
     }
  ```
  
-![搜索界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  
-
+![搜索界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png) 

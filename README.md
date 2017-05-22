@@ -13,9 +13,8 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 ## 二 主界面增加时间戳：
  
 ![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/1.png)  
+
 在 NoteEditor.java文件中的updateNote中添加
- /* 核心代码 */
- 
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式     values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, df.format(new Date()));
         
@@ -76,6 +75,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
             android:background="@drawable/tianjia"
             android:backgroundTintMode="add"/>
 
+
 ![新建note界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/2.png)  
 
  
@@ -126,11 +126,6 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 ![更换主题界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/3.png)  
 
 ![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/4.png)  
-
-![主题界面2](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/5.png)  
-
-![主题界面3](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/6.png) 
-
 
 
  

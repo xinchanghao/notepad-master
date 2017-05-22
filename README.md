@@ -152,10 +152,10 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
                     if (charSequence.length()!=0 && et_Search.getText().toString().length()!=0){
                     String str_Search = et_Search.getText().toString();
                     Cursor search_cursor = managedQuery(
-                                getIntent().getData(),            // Use the default content URI for the provider.
-                                PROJECTION,                       // Return the note ID and title for each note.
-                                NotePad.Notes.COLUMN_NAME_TITLE+" like ?",                             // No where clause, return all records.
-                                new String[]{"%"+str_Search+"%"}, //匹配字符串条件                            // No where clause, therefore no where column values.
+                                getIntent().getData(),            
+                                PROJECTION,                       
+                                NotePad.Notes.COLUMN_NAME_TITLE+" like ?",   
+                                new String[]{"%"+str_Search+"%"}, //匹配字符串条件                           
                         NotePad.Notes.DEFAULT_SORT_ORDER  // Use the default sort order.
                 );
                 adapter.swapCursor(search_cursor);//刷新listview
@@ -169,4 +169,4 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
     }
  ```
  
-![搜索界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png) 
+![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  

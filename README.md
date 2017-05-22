@@ -1,21 +1,27 @@
 # NotePad
 This is an AndroidStudio rebuild of google SDK sample NotePad
-一 功能扩展如下：
+## 一 功能扩展如下：
 
  1.增加时间戳显示
+ 
  2.添加笔记查询功能
+ 
  3.界面UI美化
+ 
  4.更改记事本的背景
  
-二 主界面增加时间戳：
+## 二 主界面增加时间戳：
  
 ![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/1.png)  
 在 NoteEditor.java文件中的updateNote中添加
+ /* 核心代码 */
+ 
 
-  SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-  values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, df.format(new Date()));
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式     values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, df.format(new Date()));
+        
+
  
-三、点击+,新建note界面，UI美化：
+## 三、点击+,新建note界面，UI美化：
  
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,7 +79,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 ![新建note界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/2.png)  
 
  
-四、更换主题界面：
+## 四、更换主题界面：
  
     public void ColorSelect(View view){
         String color;
@@ -128,11 +134,11 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 
 
  
-五、搜索笔记：
+## 五、搜索笔记：
  
-使用TextWatcher实现textview输入监听，使用数据库语句like实现模糊查找
-
-private void addSearchView() {
+#### 使用TextWatcher实现textview输入监听，使用数据库语句like实现模糊查找
+ 
+        private void addSearchView() {
             //给listview添加头部(search)
             View v=View.inflate(this, R.layout.notelistheader,null);
             getListView().addHeaderView(v);
@@ -159,7 +165,9 @@ private void addSearchView() {
             }
         }
     });
-}
+    }
+
+
 
  
 ![搜索界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  

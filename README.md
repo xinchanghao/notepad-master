@@ -14,14 +14,15 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
  
 ![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/1.png)  
 
-在 NoteEditor.java文件中的updateNote中添加
+*在 NoteEditor.java文件中的updateNote中添加*
 
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式     values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, df.format(new Date()));
+```
+SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式     values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, df.format(new Date()));
+```
         
-
- 
 ## 三、点击+,新建note界面，UI美化：
  
+ ```
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,40 +48,39 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
             android:layout_marginLeft="10dp"
             android:id="@+id/iv_searchnotes"
             />
-
     </LinearLayout>
 
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_weight="1"
-    android:orientation="vertical"
-    android:layout_height="wrap_content">
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="#00000000"
-        android:divider="#FFFFCC"
-        android:dividerHeight="0dp"
-        android:id="@id/android:list"
+     <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_weight="1"
+     android:orientation="vertical"
+     android:layout_height="wrap_content">
+     <ListView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:cacheColorHint="#00000000"
+         android:divider="#FFFFCC"
+         android:dividerHeight="0dp"
+         android:id="@id/android:list"
+         >
+     </ListView>
+     <ImageButton
+         android:id="@+id/fab"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_gravity="bottom|center"
+         android:layout_margin="45dp"
+         android:background="@drawable/tianjia"
+         android:backgroundTintMode="add"/>
 
-        >
-
-    </ListView>
-        <ImageButton
-            android:id="@+id/fab"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom|center"
-            android:layout_margin="45dp"
-            android:background="@drawable/tianjia"
-            android:backgroundTintMode="add"/>
-
+```
 
 ![新建note界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/2.png)  
 
  
 ## 四、更换主题界面：
  
+ ```
     public void ColorSelect(View view){
         String color;
         switch(view.getId()){
@@ -123,16 +123,22 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 
     }
 
+```
+
 ![更换主题界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/3.png)  
 
 ![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/4.png)  
 
+![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/5.png)  
+
+![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/6.png)  
 
  
 ## 五、搜索笔记：
  
-#### 使用TextWatcher实现textview输入监听，使用数据库语句like实现模糊查找
+*使用TextWatcher实现textview输入监听，使用数据库语句like实现模糊查找*
  
+ ```
         private void addSearchView() {
             //给listview添加头部(search)
             View v=View.inflate(this, R.layout.notelistheader,null);
@@ -161,9 +167,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
         }
     });
     }
-
-
-
- 
+ ```
+ 
 ![搜索界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  
 

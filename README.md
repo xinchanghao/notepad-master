@@ -135,7 +135,9 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
 
  
 ## 五、搜索笔记：
- 
+
+ ![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  
+ 
 *使用TextWatcher实现textview输入监听，使用数据库语句like实现模糊查找*
  
  ```
@@ -169,4 +171,4 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
     }
  ```
  
-![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  
+

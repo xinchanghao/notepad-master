@@ -191,7 +191,7 @@ public class NotesListAdapter extends BaseAdapter {
     public void Search(String searchTitle){
         searchData=new ArrayList<NoteBean>();
         for(NoteBean noteBean:mDate){
-            if(noteBean.getTitle().equals(searchTitle)){
+            if(noteBean.getTitle().indexOf(searchTitle)!=-1){
                 searchData.add(noteBean);
             }
         }

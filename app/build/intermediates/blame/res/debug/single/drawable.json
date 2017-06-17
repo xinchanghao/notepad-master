@@ -12,12 +12,12 @@
         "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\palevioletred.png"
     },
     {
-        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addnote.png",
-        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\addnote.png"
-    },
-    {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\yellow.png",
         "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\yellow.png"
+    },
+    {
+        "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addnote.png",
+        "source": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\src\\main\\res\\drawable\\addnote.png"
     },
     {
         "merged": "C:\\Users\\14334\\AndroidStudioProjects\\Notepad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\live_folder_notes.png",

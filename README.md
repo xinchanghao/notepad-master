@@ -12,7 +12,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
  
 ## 二 主界面增加时间戳：
  
-![主界面](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/1.png)  
+![主界面](https://github.com/ChhXin/notepad-master/master/app/src/main/res/drawable/1.png)  
 
 *在 NoteEditor.java文件中的updateNote中添加*
 

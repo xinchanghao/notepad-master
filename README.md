@@ -12,7 +12,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
  
 ## 二 主界面增加时间戳：
  
-![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/1.png)  
+![主界面](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/1.png)  
 
 *在 NoteEditor.java文件中的updateNote中添加*
 
@@ -75,7 +75,7 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
 
 ```
 
-![新建note界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/2.png)  
+![新建note界面](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/2.png)  
 
  
 ## 四、更换主题界面：
@@ -125,18 +125,18 @@ SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期
 
 ```
 
-![更换主题界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/3.png)  
+![更换主题界面](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/3.png)  
 
-![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/4.png)  
+![主题界面1](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/4.png)  
 
-![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/5.png)  
+![主题界面1](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/5.png)  
 
-![主题界面1](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/6.png)  
+![主题界面1](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/6.png)  
 
  
 ## 五、搜索笔记：
 
- ![主界面](https://github.com/xinchanghao/notepad-master/blob/master/app/src/main/res/drawable/7.png)  
+ ![主界面](https://github.com/ChhXin/notepad-master/blob/master/app/src/main/res/drawable/7.png)  
  
 *使用TextWatcher实现textview输入监听，使用数据库语句like实现模糊查找*
  
